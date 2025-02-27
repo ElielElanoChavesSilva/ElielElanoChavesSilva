@@ -3,9 +3,9 @@
   <img height=180em src = "https://github-readme-stats.vercel.app/api?username=ElielElanoChavesSilva&show_icons=true&theme=tokyonight&line_height=27">
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElielElanoChavesSilva&layout=compact&langs_count=7&theme=tokyonight"/>
 </p>
-<!-- <img src="https://img.shields.io/badge/-ritik-purple?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/pinkdogg307/"/> -->
-## Tecnologias
-<div style="display: inline_block"><br>
+
+ ## Tecnologias
+<div style="display: inline_block">
   <img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
   <img align="center"  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center"  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
@@ -15,7 +15,7 @@
   
   ## Contato
 <div> 
-  <a href="https://www.linkedin.com/in/rafaella-ballerini-45875016a" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+  <a href="https://www.linkedin.com/in/eliel-elano-chaves-silva-78608524b" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
 
 <br>
