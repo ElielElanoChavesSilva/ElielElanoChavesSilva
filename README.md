@@ -1,3 +1,5 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=2c6fff&height=120&section=header"/>
+
 # Bem-vindo ao meu perfil no Github.
 <p align = "center">
   <img height=180em src = "https://github-readme-stats.vercel.app/api?username=ElielElanoChavesSilva&show_icons=true&theme=tokyonight&line_height=27">
@@ -26,7 +28,5 @@
 </div>
 
 <br>
-
-
-
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=2c6fff&height=120&section=footer"/>
 
