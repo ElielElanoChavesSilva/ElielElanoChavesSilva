@@ -27,7 +27,6 @@
   <a href = "mailto:elielelano7@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 </div>
 
-
 <br>
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=2c6fff&height=120&section=footer"/>
 
