@@ -1,11 +1,6 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=2c6fff&height=120&section=header"/>
 
 # Bem-vindo ao meu perfil do Github.
-<p align = "center">
-  <img height=180em src = "https://github-readme-stats.vercel.app/api?username=ElielElanoChavesSilva&show_icons=true&theme=tokyonight&line_height=27">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElielElanoChavesSilva&layout=compact&langs_count=7&theme=tokyonight"/>
-</p>
-
  ## Sobre mim
 - 🎈Tenho 21 anos
 - 📚 Atualmente estou cursando Tecnologia da Informação na UNIVESP.
@@ -25,13 +20,6 @@
 <div> 
   <a href="https://www.linkedin.com/in/eliel-elano-chaves-silva-78608524b" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
   <a href = "mailto:elielelano7@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-</div>
-<div>
-  <picture align="center">
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ElielElanoChavesSilva/ElielElanoChavesSilva/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ElielElanoChavesSilva/ElielElanoChavesSilva/output/github-contribution-grid-snake-dark.svg">
-    <img align="center" alt="github contribution grid snake animation" src="https://ElielElanoChavesSilva/ElielElanoChavesSilva/ElielElanoChavesSilva/output/github-contribution-grid-snake.svg">
-  </picture>
 </div>
 <br>
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=2c6fff&height=120&section=footer"/>
