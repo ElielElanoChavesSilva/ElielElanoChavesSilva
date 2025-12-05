@@ -11,36 +11,63 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout repository (full, with write creds)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Generate Snake SVG
+      - name: Setup git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Generate snake SVGs (light + dark) into tmp/
         uses: Platane/snk@v3
         with:
           github_user_name: "ElielElanoChavesSilva"
           outputs: |
-            output/github-contribution-grid-snake.svg
+            tmp/github-contribution-grid-snake.svg
+            tmp/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # garante que o branch output existe
-      - name: Create output branch if it doesn't exist
+      - name: Show generated files (debug)
         run: |
-          git fetch origin
-          if ! git ls-remote --heads origin output | grep output; then
-            echo "Branch output not found. Creating..."
-            git checkout -b output
-            git push origin output
+          ls -la tmp || true
+          file tmp/* || true
+
+      - name: Prepare output branch and copy files
+        run: |
+          # fetch remote branches
+          git fetch origin output || true
+
+          # checkout output branch (create if not exists)
+          if git show-ref --quiet refs/heads/output; then
+            git checkout output
           else
-            echo "Branch output already exists."
+            git checkout --orphan output
+            git rm -rf .
+            git commit --allow-empty -m "Create output branch"
           fi
 
-      - name: Commit and push snake
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Generate snake animation"
-          branch: output
-          file_pattern: output/**
+          # remove old snake files if present
+          rm -f github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+
+          # move newly generated files to repo root
+          mv tmp/github-contribution-grid-snake.svg ./github-contribution-grid-snake.svg || true
+          mv tmp/github-contribution-grid-snake-dark.svg ./github-contribution-grid-snake-dark.svg || true
+
+          # show tree for debug
+          ls -la
+
+      - name: Commit & push to output branch
+        run: |
+          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update snake SVGs"
+            git push origin HEAD:output
+          fi
