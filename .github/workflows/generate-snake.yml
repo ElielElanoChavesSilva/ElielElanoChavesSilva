@@ -1,88 +1,43 @@
-name: Generate Snake
-
-permissions:
-  contents: write
+name: generate animation
 
 on:
+  # run automatically every 24 hours
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */24 * * *" 
+  
+  # allows to manually run the job at any time
   workflow_dispatch:
+  
+  # run on every push on the master branch
+  push:
+    branches:
+    - master
+    
 
 jobs:
-  build:
+  generate:
+    permissions: 
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
     steps:
-      - name: Checkout repository (full, with write creds)
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Generate Snake (dark)
+      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: "ElielElanoChavesSilva"
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
-            output/github-contribution-grid-snake-dark.svg
-        env:
-          # tema dark do snk
-          SKINS: dark
-
-      - name: Commit and push
-        uses: stefanzweifel/git-auto-commit-action@v5
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          
+          
+      # push the content of <build_dir> to a branch
+      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          commit_message: "Generate dark snake"
-          branch: output
-          file_pattern: output/**
-      - name: Setup git user
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-      - name: Generate snake SVGs (light + dark) into tmp/
-        uses: Platane/snk@v3
-        with:
-          github_user_name: "ElielElanoChavesSilva"
-          outputs: |
-            tmp/github-contribution-grid-snake.svg
-            tmp/github-contribution-grid-snake-dark.svg?palette=github-dark
+          target_branch: output
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Show generated files (debug)
-        run: |
-          ls -la tmp || true
-          file tmp/* || true
-
-      - name: Prepare output branch and copy files
-        run: |
-          # fetch remote branches
-          git fetch origin output || true
-
-          # checkout output branch (create if not exists)
-          if git show-ref --quiet refs/heads/output; then
-            git checkout output
-          else
-            git checkout --orphan output
-            git rm -rf .
-            git commit --allow-empty -m "Create output branch"
-          fi
-
-          # remove old snake files if present
-          rm -f github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
-
-          # move newly generated files to repo root
-          mv tmp/github-contribution-grid-snake.svg ./github-contribution-grid-snake.svg || true
-          mv tmp/github-contribution-grid-snake-dark.svg ./github-contribution-grid-snake-dark.svg || true
-
-          # show tree for debug
-          ls -la
-
-      - name: Commit & push to output branch
-        run: |
-          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg || true
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update snake SVGs"
-            git push origin HEAD:output
-          fi
