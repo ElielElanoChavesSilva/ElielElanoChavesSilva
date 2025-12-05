@@ -13,34 +13,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
 
-      - name: Generate Snake SVG
-        uses: Platane/snk@v3
+      - name: Generate Snake (dark)
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: "ElielElanoChavesSilva"
           outputs: |
-            output/github-contribution-grid-snake.svg
+            output/github-contribution-grid-snake-dark.svg
+        env:
+          # tema dark do snk
+          SKINS: dark
 
-      # garante que o branch output existe
-      - name: Create output branch if it doesn't exist
-        run: |
-          git fetch origin
-          if ! git ls-remote --heads origin output | grep output; then
-            echo "Branch output not found. Creating..."
-            git checkout -b output
-            git push origin output
-          else
-            echo "Branch output already exists."
-          fi
-
-      - name: Commit and push snake
+      - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Generate snake animation"
+          commit_message: "Generate dark snake"
           branch: output
           file_pattern: output/**
