@@ -16,8 +16,23 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
 
+      - name: Generate Snake (dark)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: "ElielElanoChavesSilva"
+          outputs: |
+            output/github-contribution-grid-snake-dark.svg
+        env:
+          # tema dark do snk
+          SKINS: dark
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Generate dark snake"
+          branch: output
+          file_pattern: output/**
       - name: Setup git user
         run: |
           git config user.name "github-actions[bot]"
