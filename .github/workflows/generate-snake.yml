@@ -23,9 +23,22 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: "ElielElanoChavesSilva"
-          svg_out_path: output/github-contribution-grid-snake.svg
+          outputs: |
+            output/github-contribution-grid-snake.svg
 
-      - name: Commit and push to output branch
+      # garante que o branch output existe
+      - name: Create output branch if it doesn't exist
+        run: |
+          git fetch origin
+          if ! git ls-remote --heads origin output | grep output; then
+            echo "Branch output not found. Creating..."
+            git checkout -b output
+            git push origin output
+          else
+            echo "Branch output already exists."
+          fi
+
+      - name: Commit and push snake
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Generate snake animation"
