@@ -11,9 +11,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
+      - name: Checkout repository (full, with write creds)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -34,3 +33,56 @@ jobs:
           commit_message: "Generate dark snake"
           branch: output
           file_pattern: output/**
+      - name: Setup git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Generate snake SVGs (light + dark) into tmp/
+        uses: Platane/snk@v3
+        with:
+          github_user_name: "ElielElanoChavesSilva"
+          outputs: |
+            tmp/github-contribution-grid-snake.svg
+            tmp/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Show generated files (debug)
+        run: |
+          ls -la tmp || true
+          file tmp/* || true
+
+      - name: Prepare output branch and copy files
+        run: |
+          # fetch remote branches
+          git fetch origin output || true
+
+          # checkout output branch (create if not exists)
+          if git show-ref --quiet refs/heads/output; then
+            git checkout output
+          else
+            git checkout --orphan output
+            git rm -rf .
+            git commit --allow-empty -m "Create output branch"
+          fi
+
+          # remove old snake files if present
+          rm -f github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+
+          # move newly generated files to repo root
+          mv tmp/github-contribution-grid-snake.svg ./github-contribution-grid-snake.svg || true
+          mv tmp/github-contribution-grid-snake-dark.svg ./github-contribution-grid-snake-dark.svg || true
+
+          # show tree for debug
+          ls -la
+
+      - name: Commit & push to output branch
+        run: |
+          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update snake SVGs"
+            git push origin HEAD:output
+          fi
