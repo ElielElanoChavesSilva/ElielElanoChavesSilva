@@ -2,7 +2,7 @@
 
 # Bem-vindo ao meu perfil do Github.
  ## Sobre mim
-- 🎈Tenho 21 anos
+- 🎈Tenho 22 anos
 - 📚 Atualmente estou cursando Tecnologia da Informação na UNIVESP.
 - 💻 Trabalho com desenvolvimento de Software atuando na área do Backend.
 - 🏃‍♂️ Estou sempre em busca de aprimorar minhas habilidades em desenvolvimento de API´s adotando arquiteturas bem definidas e seguindo os princípios do SOLID.
