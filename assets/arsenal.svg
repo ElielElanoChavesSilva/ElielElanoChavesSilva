@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 410" width="1200" height="410" role="img" aria-label="Arsenal: C#, .NET, TypeScript, JavaScript, SQL Server, PostgreSQL, AWS, Azure DevOps, Bitbucket, Git e GitHub">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241910"/>
+      <stop offset="1" stop-color="#140d08"/>
+    </linearGradient>
+    <g id="frame">
+      <rect width="210" height="76" rx="12" fill="url(#tile)" stroke="#D4AF37" stroke-width="1.5"/>
+      <circle cx="38" cy="38" r="27" fill="none" stroke="#D4AF37" stroke-opacity="0.6" stroke-width="1.5">
+        <animate attributeName="r" values="27;31;27" dur="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </defs>
+
+  <g font-family="Georgia, 'Times New Roman', serif">
+    <g fill="#D4AF37" font-size="16" font-weight="bold" letter-spacing="4" text-anchor="middle">
+      <text x="600" y="34">LÂMINAS · LINGUAGENS E FRAMEWORKS</text>
+      <text x="600" y="164">COFRES · BANCOS DE DADOS</text>
+      <text x="600" y="294">TERRAS E FORJAS · NUVEM, DEVOPS E VERSIONAMENTO</text>
+    </g>
+    <g stroke="#D4AF37" stroke-opacity="0.5">
+      <line x1="40" y1="29" x2="250" y2="29"/><line x1="950" y1="29" x2="1160" y2="29"/>
+      <line x1="40" y1="159" x2="430" y2="159"/><line x1="770" y1="159" x2="1160" y2="159"/>
+      <line x1="40" y1="289" x2="160" y2="289"/><line x1="1040" y1="289" x2="1160" y2="289"/>
+    </g>
+  </g>
+
+  <g font-family="Georgia, 'Times New Roman', serif">
+    <g transform="translate(153 50)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.167;1" dur="0.60s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="153 64;153 64;153 50" keyTimes="0;0.167;1" dur="0.60s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#68217A"/>
+      <text x="38" y="45" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#FFF">C#</text>
+      <text x="76" y="34" font-size="18" font-weight="bold" fill="#F5E6C8">C#</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Lâmina principal</text>
+    </g>
+    <g transform="translate(381 50)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.333;1" dur="0.75s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="381 64;381 64;381 50" keyTimes="0;0.333;1" dur="0.75s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#512BD4"/>
+      <text x="38" y="44" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" font-weight="bold" fill="#FFF">.NET</text>
+      <text x="76" y="34" font-size="18" font-weight="bold" fill="#F5E6C8">.NET</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Forja das APIs</text>
+    </g>
+    <g transform="translate(609 50)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.444;1" dur="0.90s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="609 64;609 64;609 50" keyTimes="0;0.444;1" dur="0.90s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#3178C6"/>
+      <text x="38" y="45" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#FFF">TS</text>
+      <text x="76" y="34" font-size="18" font-weight="bold" fill="#F5E6C8">TypeScript</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Lâmina tipada</text>
+    </g>
+    <g transform="translate(837 50)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.524;1" dur="1.05s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="837 64;837 64;837 50" keyTimes="0;0.524;1" dur="1.05s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#F7DF1E"/>
+      <text x="38" y="45" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#1a1410">JS</text>
+      <text x="76" y="34" font-size="18" font-weight="bold" fill="#F5E6C8">JavaScript</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Lâmina ágil</text>
+    </g>
+
+    <g transform="translate(381 180)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.583;1" dur="1.20s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="381 194;381 194;381 180" keyTimes="0;0.583;1" dur="1.20s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#CC2927"/>
+      <text x="38" y="44" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#FFF">SQL</text>
+      <text x="76" y="34" font-size="18" font-weight="bold" fill="#F5E6C8">SQL Server</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Cofre relacional</text>
+    </g>
+    <g transform="translate(609 180)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.630;1" dur="1.35s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="609 194;609 194;609 180" keyTimes="0;0.630;1" dur="1.35s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#336791"/>
+      <text x="38" y="45" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#FFF">PG</text>
+      <text x="76" y="34" font-size="18" font-weight="bold" fill="#F5E6C8">PostgreSQL</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Cofre relacional</text>
+    </g>
+
+    <g transform="translate(39 310)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.667;1" dur="1.50s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="39 324;39 324;39 310" keyTimes="0;0.667;1" dur="1.50s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#FF9900"/>
+      <text x="38" y="44" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#1a1410">AWS</text>
+      <text x="76" y="34" font-size="18" font-weight="bold" fill="#F5E6C8">AWS</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Terras na nuvem</text>
+    </g>
+    <g transform="translate(267 310)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.697;1" dur="1.65s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="267 324;267 324;267 310" keyTimes="0;0.697;1" dur="1.65s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#0078D7"/>
+      <text x="38" y="44" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#FFF">ADO</text>
+      <text x="76" y="34" font-size="17" font-weight="bold" fill="#F5E6C8">Azure DevOps</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Mapa das missões</text>
+    </g>
+    <g transform="translate(495 310)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.722;1" dur="1.80s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="495 324;495 324;495 310" keyTimes="0;0.722;1" dur="1.80s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#2684FF"/>
+      <text x="38" y="45" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#FFF">BB</text>
+      <text x="76" y="34" font-size="18" font-weight="bold" fill="#F5E6C8">Bitbucket</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Arquivo do reino</text>
+    </g>
+    <g transform="translate(723 310)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.744;1" dur="1.95s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="723 324;723 324;723 310" keyTimes="0;0.744;1" dur="1.95s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#F05032"/>
+      <text x="38" y="44" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#FFF">GIT</text>
+      <text x="76" y="34" font-size="18" font-weight="bold" fill="#F5E6C8">Git</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Crônicas do código</text>
+    </g>
+    <g transform="translate(951 310)">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.762;1" dur="2.10s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="951 324;951 324;951 310" keyTimes="0;0.762;1" dur="2.10s" fill="freeze"/>
+      <use href="#frame"/>
+      <circle cx="38" cy="38" r="24" fill="#6E5494"/>
+      <text x="38" y="45" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#FFF">GH</text>
+      <text x="76" y="34" font-size="18" font-weight="bold" fill="#F5E6C8">GitHub</text>
+      <text x="76" y="56" font-size="13" fill="#BFA77A">Salão dos projetos</text>
+    </g>
+  </g>
+</svg>

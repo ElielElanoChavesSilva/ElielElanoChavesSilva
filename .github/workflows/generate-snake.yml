@@ -1,40 +1,43 @@
-name: generate animation
+name: Gerar cards e cobrinha do perfil
 
 on:
-  # run automatically every 24 hours
   schedule:
-    - cron: "0 */24 * * *" 
-  
-  # allows to manually run the job at any time
+    - cron: "0 3 * * *"
   workflow_dispatch:
-  
-  # run on every push on the master branch
   push:
     branches:
-    - master
-    
+      - main
 
 jobs:
   generate:
-    permissions: 
+    permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-    
+    timeout-minutes: 10
+
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - name: generate github-contribution-grid-snake.svg
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar o Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Gerar cards de estatísticas e linguagens
+        run: node .github/scripts/generate-cards.mjs dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+
+      - name: Gerar a cobrinha das contribuições
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          
-          
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: push github-contribution-grid-snake.svg to the output branch
+            dist/snake.svg?color_snake=#D4AF37&color_dots=#161b22,#3b2a14,#6b4a1e,#a8741e,#D4AF37
+
+      - name: Publicar os arquivos na branch output
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output

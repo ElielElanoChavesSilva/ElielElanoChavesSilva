@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170" width="1200" height="170" role="img" aria-label="Pela honra do código">
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1a1410"/>
+      <stop offset="0.5" stop-color="#5a1a0a"/>
+      <stop offset="1" stop-color="#1a1410"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="170" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="170" fill="url(#band)"/>
+    <path d="M0 170 V140 Q300 115 600 135 T1200 128 V170 Z" fill="#0b0709"/>
+
+    <g fill="#FFB347">
+      <circle cx="120" cy="170" r="2.5"><animate attributeName="cy" values="170;-10" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite"/></circle>
+      <circle cx="260" cy="170" r="2"><animate attributeName="cy" values="170;-10" dur="6.5s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="6.5s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="410" cy="170" r="3"><animate attributeName="cy" values="170;-10" dur="4.5s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="4.5s" begin="2s" repeatCount="indefinite"/></circle>
+      <circle cx="540" cy="170" r="2"><animate attributeName="cy" values="170;-10" dur="5.5s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="5.5s" begin="0.5s" repeatCount="indefinite"/></circle>
+      <circle cx="690" cy="170" r="2.5"><animate attributeName="cy" values="170;-10" dur="6s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="6s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="820" cy="170" r="2"><animate attributeName="cy" values="170;-10" dur="5s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="5s" begin="2.5s" repeatCount="indefinite"/></circle>
+      <circle cx="960" cy="170" r="3"><animate attributeName="cy" values="170;-10" dur="4.8s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="4.8s" begin="0.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1090" cy="170" r="2"><animate attributeName="cy" values="170;-10" dur="6.2s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="6.2s" begin="3s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <g transform="translate(600 50)">
+      <g transform="rotate(45)">
+        <rect x="-3" y="-40" width="6" height="56" fill="#C7D0D9"/>
+        <rect x="-12" y="16" width="24" height="5" fill="#D4AF37"/>
+        <rect x="-2.5" y="21" width="5" height="14" fill="#6b4a1e"/>
+      </g>
+      <g transform="rotate(-45)">
+        <rect x="-3" y="-40" width="6" height="56" fill="#C7D0D9"/>
+        <rect x="-12" y="16" width="24" height="5" fill="#D4AF37"/>
+        <rect x="-2.5" y="21" width="5" height="14" fill="#6b4a1e"/>
+      </g>
+      <animateTransform attributeName="transform" type="translate" values="600 50;600 46;600 50" dur="2.5s" repeatCount="indefinite"/>
+    </g>
+
+    <text x="600" y="118" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold" letter-spacing="5" fill="#D4AF37">PELA HONRA DO CÓDIGO
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <rect x="2" y="2" width="1196" height="166" rx="17" fill="none" stroke="#D4AF37" stroke-opacity="0.6" stroke-width="2"/>
+</svg>

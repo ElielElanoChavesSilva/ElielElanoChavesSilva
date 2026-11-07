@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="Ficha do Herói: Eliel Elano Chaves Silva, 22 anos, Desenvolvedor de Software Backend, Bacharelado em Tecnologia da Informação, C# e .NET, TypeScript e JavaScript, SQL Server e PostgreSQL, AWS, Azure DevOps e Bitbucket">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1d12"/>
+      <stop offset="1" stop-color="#140d08"/>
+    </linearGradient>
+    <radialGradient id="parchment" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0" stop-color="#F8EDD3"/>
+      <stop offset="0.75" stop-color="#EBD6A8"/>
+      <stop offset="1" stop-color="#C9A86A"/>
+    </radialGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4E9EE"/>
+      <stop offset="0.5" stop-color="#9AA5B1"/>
+      <stop offset="1" stop-color="#5D6873"/>
+    </linearGradient>
+    <linearGradient id="blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F2F5F8"/>
+      <stop offset="0.5" stop-color="#C7D0D9"/>
+      <stop offset="1" stop-color="#8793A0"/>
+    </linearGradient>
+    <radialGradient id="aura">
+      <stop offset="0" stop-color="#D4AF37" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="20" y="20" width="340" height="400" rx="16" fill="url(#wood)" stroke="#D4AF37" stroke-width="2"/>
+  <circle cx="190" cy="215" r="150" fill="url(#aura)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <ellipse cx="190" cy="372" rx="90" ry="10" fill="#000" opacity="0.5"/>
+
+  <g transform="translate(190 100)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3s" repeatCount="indefinite"/>
+
+      <path d="M-50 72 Q-70 180 -66 268 L66 268 Q70 180 50 72 Z" fill="#7a0000">
+        <animate attributeName="d" values="M-50 72 Q-70 180 -66 268 L66 268 Q70 180 50 72 Z;M-50 72 Q-82 180 -80 270 L60 266 Q66 180 50 72 Z;M-50 72 Q-70 180 -66 268 L66 268 Q70 180 50 72 Z" dur="3.5s" repeatCount="indefinite"/>
+      </path>
+
+      <rect x="-34" y="196" width="26" height="62" rx="6" fill="url(#steel)"/>
+      <rect x="8" y="196" width="26" height="62" rx="6" fill="url(#steel)"/>
+      <rect x="-38" y="250" width="32" height="14" rx="5" fill="#2a1d12"/>
+      <rect x="6" y="250" width="32" height="14" rx="5" fill="#2a1d12"/>
+
+      <path d="M-48 70 Q0 56 48 70 L44 196 Q0 212 -44 196 Z" fill="url(#steel)" stroke="#4a545e" stroke-width="2"/>
+      <path d="M0 74 V196" stroke="#4a545e" stroke-width="2"/>
+      <path d="M-14 110 L0 96 L14 110 L0 140 Z" fill="#8B0000" stroke="#D4AF37" stroke-width="2"/>
+      <rect x="-46" y="180" width="92" height="12" rx="3" fill="#6b4a1e"/>
+      <rect x="-8" y="179" width="16" height="14" rx="2" fill="#D4AF37"/>
+
+      <rect x="48" y="80" width="20" height="74" rx="9" fill="url(#steel)" transform="rotate(-8 58 80)"/>
+
+      <g transform="translate(66 150) rotate(14)">
+        <polygon points="-6,-8 6,-8 6,-170 0,-188 -6,-170" fill="url(#blade)" stroke="#5D6873" stroke-width="1"/>
+        <line x1="0" y1="-12" x2="0" y2="-170" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+        <rect x="-24" y="-12" width="48" height="9" rx="3" fill="#D4AF37"/>
+        <rect x="-5" y="-4" width="10" height="30" rx="3" fill="#6b4a1e"/>
+        <circle cx="0" cy="30" r="7" fill="#D4AF37"/>
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0 -20;0 -20;0 -175;0 -175" keyTimes="0;0.5;0.8;1" dur="3s" repeatCount="indefinite"/>
+          <path d="M0 -9 L2.5 -2.5 L9 0 L2.5 2.5 L0 9 L-2.5 2.5 L-9 0 L-2.5 -2.5 Z" fill="#FFFFFF">
+            <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.5;0.65;0.8;1" dur="3s" repeatCount="indefinite"/>
+          </path>
+        </g>
+      </g>
+      <circle cx="66" cy="150" r="11" fill="url(#steel)" stroke="#4a545e" stroke-width="2"/>
+
+      <ellipse cx="-52" cy="78" rx="24" ry="16" fill="url(#steel)" stroke="#4a545e" stroke-width="2"/>
+      <ellipse cx="52" cy="78" rx="24" ry="16" fill="url(#steel)" stroke="#4a545e" stroke-width="2"/>
+
+      <path d="M0 -40 Q-10 -70 18 -78 Q8 -60 28 -50 Q10 -48 0 -40 Z" fill="#C0392B">
+        <animateTransform attributeName="transform" type="rotate" values="0 0 -40;-6 0 -40;0 0 -40;4 0 -40;0 0 -40" dur="2.5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-32 8 Q-32 -36 0 -40 Q32 -36 32 8 L32 44 Q0 58 -32 44 Z" fill="url(#steel)" stroke="#4a545e" stroke-width="2"/>
+      <rect x="-24" y="8" width="48" height="7" rx="2" fill="#111"/>
+      <path d="M0 18 V44" stroke="#4a545e" stroke-width="2"/>
+      <g fill="#FFD23F">
+        <rect x="-15" y="10" width="8" height="3" rx="1.5">
+          <animate attributeName="opacity" values="1;1;0;1" keyTimes="0;0.9;0.95;1" dur="4s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="7" y="10" width="8" height="3" rx="1.5">
+          <animate attributeName="opacity" values="1;1;0;1" keyTimes="0;0.9;0.95;1" dur="4s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+
+      <g transform="translate(-74 150)">
+        <path d="M-36 -48 H36 V0 Q36 48 0 70 Q-36 48 -36 0 Z" fill="#8B0000" stroke="#D4AF37" stroke-width="4"/>
+        <path d="M-26 -38 H26 V0 Q26 38 0 56 Q-26 38 -26 0 Z" fill="none" stroke="#D4AF37" stroke-opacity="0.5" stroke-width="1.5"/>
+        <text x="0" y="12" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="30" font-weight="bold" fill="#D4AF37">{ }</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="190" y="404" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="bold" letter-spacing="3" fill="#D4AF37">SIR ELIEL · NÍVEL 22</text>
+
+  <rect x="380" y="20" width="800" height="400" rx="16" fill="url(#parchment)" stroke="#8B5A2B" stroke-width="3"/>
+  <rect x="392" y="32" width="776" height="376" rx="10" fill="none" stroke="#8B5A2B" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <text x="780" y="74" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold" letter-spacing="5" fill="#8B0000">FICHA DO HERÓI</text>
+  <line x1="580" y1="88" x2="980" y2="88" stroke="#8B0000" stroke-width="2"/>
+  <polygon points="780,82 786,88 780,94 774,88" fill="#8B0000"/>
+
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="19">
+    <g><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.250;1" dur="0.80s" fill="freeze"/>
+      <text x="420" y="124" font-weight="bold" fill="#8B0000">◆Nome</text><text x="660" y="124" fill="#2a1d12">Eliel Elano Chaves Silva</text></g>
+    <g><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.400;1" dur="1.00s" fill="freeze"/>
+      <text x="420" y="156" font-weight="bold" fill="#8B0000">◆Idade</text><text x="660" y="156" fill="#2a1d12">22 anos</text></g>
+    <g><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.500;1" dur="1.20s" fill="freeze"/>
+      <text x="420" y="188" font-weight="bold" fill="#8B0000">◆Classe</text><text x="660" y="188" fill="#2a1d12">Desenvolvedor de Software · Backend</text></g>
+    <g><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.571;1" dur="1.40s" fill="freeze"/>
+      <text x="420" y="220" font-weight="bold" fill="#8B0000">◆Formação</text><text x="660" y="220" fill="#2a1d12">Bacharelado em Tecnologia da Informação</text></g>
+    <g><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.625;1" dur="1.60s" fill="freeze"/>
+      <text x="420" y="252" font-weight="bold" fill="#8B0000">◆Arma principal</text><text x="660" y="252" fill="#2a1d12">C# · .NET</text></g>
+    <g><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.667;1" dur="1.80s" fill="freeze"/>
+      <text x="420" y="284" font-weight="bold" fill="#8B0000">◆Armas secundárias</text><text x="660" y="284" fill="#2a1d12">TypeScript · JavaScript</text></g>
+    <g><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.700;1" dur="2.00s" fill="freeze"/>
+      <text x="420" y="316" font-weight="bold" fill="#8B0000">◆Cofres do reino</text><text x="660" y="316" fill="#2a1d12">SQL Server · PostgreSQL</text></g>
+    <g><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.727;1" dur="2.20s" fill="freeze"/>
+      <text x="420" y="348" font-weight="bold" fill="#8B0000">◆Terras exploradas</text><text x="660" y="348" fill="#2a1d12">AWS · Azure DevOps · Bitbucket</text></g>
+    <g><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.750;1" dur="2.40s" fill="freeze"/>
+      <text x="420" y="380" font-weight="bold" fill="#8B0000">◆Juramento</text><text x="660" y="380" fill="#2a1d12">APIs bem arquitetadas e princípios SOLID</text></g>
+  </g>
+  <g stroke="#8B5A2B" stroke-opacity="0.35" stroke-dasharray="2 4">
+    <line x1="420" y1="134" x2="1140" y2="134"/><line x1="420" y1="166" x2="1140" y2="166"/>
+    <line x1="420" y1="198" x2="1140" y2="198"/><line x1="420" y1="230" x2="1140" y2="230"/>
+    <line x1="420" y1="262" x2="1140" y2="262"/><line x1="420" y1="294" x2="1140" y2="294"/>
+    <line x1="420" y1="326" x2="1140" y2="326"/><line x1="420" y1="358" x2="1140" y2="358"/>
+  </g>
+
+  <g transform="translate(1120 72)">
+    <circle r="28" fill="#8B0000" stroke="#5a0000" stroke-width="3">
+      <animate attributeName="r" values="28;29.5;28" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="20" fill="none" stroke="#D4AF37" stroke-opacity="0.7" stroke-width="1.5"/>
+    <text y="9" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="bold" fill="#D4AF37">E</text>
+  </g>
+</svg>

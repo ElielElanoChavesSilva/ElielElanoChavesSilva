@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" width="1200" height="40" role="img" aria-label="Divisor com espada">
+  <defs>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#D4AF37" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="gleam">
+      <stop offset="0" stop-color="#FFF6CC"/>
+      <stop offset="1" stop-color="#FFF6CC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="40" y="19" width="1120" height="2" fill="url(#line)"/>
+  <circle cx="0" cy="20" r="10" fill="url(#gleam)">
+    <animate attributeName="cx" values="80;1120;1120" keyTimes="0;0.7;1" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.1;0.6;0.7;1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(600 20)">
+    <polygon points="-110,0 -40,-3 -40,3" fill="#B8C2CC"/>
+    <rect x="-40" y="-9" width="6" height="18" rx="2" fill="#D4AF37"/>
+    <rect x="-34" y="-3" width="22" height="6" fill="#6b4a1e"/>
+    <circle cx="-8" cy="0" r="5" fill="#D4AF37"/>
+    <polygon points="110,0 40,-3 40,3" fill="#B8C2CC"/>
+    <rect x="34" y="-9" width="6" height="18" rx="2" fill="#D4AF37"/>
+    <rect x="12" y="-3" width="22" height="6" fill="#6b4a1e"/>
+    <circle cx="8" cy="0" r="5" fill="#D4AF37"/>
+    <path d="M0 -14 L10 -9 V2 Q10 10 0 15 Q-10 10 -10 2 V-9 Z" fill="#8B0000" stroke="#D4AF37" stroke-width="2">
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
