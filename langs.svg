@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 200" width="495" height="200" role="img" aria-label="LÍNGUAS DOMINADAS">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241910"/>
+      <stop offset="1" stop-color="#120c07"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="493" height="198" rx="14" fill="url(#bg)" stroke="#D4AF37" stroke-width="2"/>
+  <rect x="8" y="8" width="479" height="184" rx="10" fill="none" stroke="#D4AF37" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+  <text x="25" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold" letter-spacing="2" fill="#D4AF37">LÍNGUAS DOMINADAS</text>
+  <line x1="25" y1="48" x2="470" y2="48" stroke="#D4AF37" stroke-opacity="0.4"/>
+  
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="14">
+    <g>
+      <circle cx="32" cy="70" r="5" fill="#3178c6"/>
+      <text x="44" y="75" fill="#F5E6C8">TypeScript</text>
+      <rect x="165" y="64" width="250" height="12" rx="6" fill="#2a1d12" stroke="#6b4a1e"/>
+      <rect x="165" y="64" width="0" height="12" rx="6" fill="#3178c6">
+        <animate attributeName="width" from="0" to="115.3" begin="0.00s" dur="1.2s" fill="freeze"/>
+      </rect>
+      <text x="470" y="75" text-anchor="end" font-weight="bold" fill="#D4AF37">46,1%</text>
+    </g>
+    <g>
+      <circle cx="32" cy="92" r="5" fill="#7355dd"/>
+      <text x="44" y="97" fill="#F5E6C8">C#</text>
+      <rect x="165" y="86" width="250" height="12" rx="6" fill="#2a1d12" stroke="#6b4a1e"/>
+      <rect x="165" y="86" width="0" height="12" rx="6" fill="#7355dd">
+        <animate attributeName="width" from="0" to="81.2" begin="0.15s" dur="1.2s" fill="freeze"/>
+      </rect>
+      <text x="470" y="97" text-anchor="end" font-weight="bold" fill="#D4AF37">32,5%</text>
+    </g>
+    <g>
+      <circle cx="32" cy="114" r="5" fill="#e34c26"/>
+      <text x="44" y="119" fill="#F5E6C8">HTML</text>
+      <rect x="165" y="108" width="250" height="12" rx="6" fill="#2a1d12" stroke="#6b4a1e"/>
+      <rect x="165" y="108" width="0" height="12" rx="6" fill="#e34c26">
+        <animate attributeName="width" from="0" to="22.0" begin="0.30s" dur="1.2s" fill="freeze"/>
+      </rect>
+      <text x="470" y="119" text-anchor="end" font-weight="bold" fill="#D4AF37">8,8%</text>
+    </g>
+    <g>
+      <circle cx="32" cy="136" r="5" fill="#663399"/>
+      <text x="44" y="141" fill="#F5E6C8">CSS</text>
+      <rect x="165" y="130" width="250" height="12" rx="6" fill="#2a1d12" stroke="#6b4a1e"/>
+      <rect x="165" y="130" width="0" height="12" rx="6" fill="#663399">
+        <animate attributeName="width" from="0" to="15.5" begin="0.45s" dur="1.2s" fill="freeze"/>
+      </rect>
+      <text x="470" y="141" text-anchor="end" font-weight="bold" fill="#D4AF37">6,2%</text>
+    </g>
+    <g>
+      <circle cx="32" cy="158" r="5" fill="#f1e05a"/>
+      <text x="44" y="163" fill="#F5E6C8">JavaScript</text>
+      <rect x="165" y="152" width="250" height="12" rx="6" fill="#2a1d12" stroke="#6b4a1e"/>
+      <rect x="165" y="152" width="0" height="12" rx="6" fill="#f1e05a">
+        <animate attributeName="width" from="0" to="10.4" begin="0.60s" dur="1.2s" fill="freeze"/>
+      </rect>
+      <text x="470" y="163" text-anchor="end" font-weight="bold" fill="#D4AF37">4,1%</text>
+    </g>
+    <g>
+      <circle cx="32" cy="180" r="5" fill="#596706"/>
+      <text x="44" y="185" fill="#F5E6C8">Smalltalk</text>
+      <rect x="165" y="174" width="250" height="12" rx="6" fill="#2a1d12" stroke="#6b4a1e"/>
+      <rect x="165" y="174" width="0" height="12" rx="6" fill="#596706">
+        <animate attributeName="width" from="0" to="4.0" begin="0.75s" dur="1.2s" fill="freeze"/>
+      </rect>
+      <text x="470" y="185" text-anchor="end" font-weight="bold" fill="#D4AF37">1,3%</text>
+    </g>
+  </g>
+</svg>
