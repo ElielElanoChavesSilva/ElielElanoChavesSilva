@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 200" width="495" height="200" role="img" aria-label="ESTATÍSTICAS DO CAVALEIRO">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241910"/>
+      <stop offset="1" stop-color="#120c07"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="493" height="198" rx="14" fill="url(#bg)" stroke="#D4AF37" stroke-width="2"/>
+  <rect x="8" y="8" width="479" height="184" rx="10" fill="none" stroke="#D4AF37" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+  <text x="25" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="bold" letter-spacing="2" fill="#D4AF37">ESTATÍSTICAS DO CAVALEIRO</text>
+  <line x1="25" y1="48" x2="470" y2="48" stroke="#D4AF37" stroke-opacity="0.4"/>
+  
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="15">
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.00s" dur="0.5s" fill="freeze"/>
+      <polygon points="30,72 35,67 40,72 35,77" fill="#C0392B"/>
+      <text x="50" y="77" fill="#F5E6C8">Estrelas conquistadas</text>
+      <text x="300" y="77" text-anchor="end" font-weight="bold" fill="#D4AF37">1</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.5s" fill="freeze"/>
+      <polygon points="30,98 35,93 40,98 35,103" fill="#C0392B"/>
+      <text x="50" y="103" fill="#F5E6C8">Commits no último ano</text>
+      <text x="300" y="103" text-anchor="end" font-weight="bold" fill="#D4AF37">117</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.30s" dur="0.5s" fill="freeze"/>
+      <polygon points="30,124 35,119 40,124 35,129" fill="#C0392B"/>
+      <text x="50" y="129" fill="#F5E6C8">Pull requests enviados</text>
+      <text x="300" y="129" text-anchor="end" font-weight="bold" fill="#D4AF37">2</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.45s" dur="0.5s" fill="freeze"/>
+      <polygon points="30,150 35,145 40,150 35,155" fill="#C0392B"/>
+      <text x="50" y="155" fill="#F5E6C8">Issues abertas</text>
+      <text x="300" y="155" text-anchor="end" font-weight="bold" fill="#D4AF37">0</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.60s" dur="0.5s" fill="freeze"/>
+      <polygon points="30,176 35,171 40,176 35,181" fill="#C0392B"/>
+      <text x="50" y="181" fill="#F5E6C8">Repositórios públicos</text>
+      <text x="300" y="181" text-anchor="end" font-weight="bold" fill="#D4AF37">23</text>
+    </g>
+  </g>
+  <g transform="translate(395 118)">
+    <circle r="58" fill="#D4AF37" opacity="0.12">
+      <animate attributeName="r" values="52;60;52" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M0 -52 L48 -38 V2 Q48 38 0 60 Q-48 38 -48 2 V-38 Z" fill="#8B0000" stroke="#D4AF37" stroke-width="3"/>
+    <text y="4" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="bold" fill="#FFF6CC">124</text>
+    <text y="24" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="8.5" letter-spacing="0.5" fill="#D4AF37">CONTRIBUIÇÕES</text>
+    <text y="36" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="8.5" letter-spacing="0.5" fill="#D4AF37">NO ANO</text>
+  </g>
+</svg>
